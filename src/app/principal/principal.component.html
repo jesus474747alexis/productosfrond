@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        Productos
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+    
+    <ion-content>
+  
+
+  <li *ngFor="let u of productos">
+    <a *ngIf="data" href="/home/perfillike?id={{u.id}}"> 
+        <ion-button type="submit" color="danger" expand="block">Producto</ion-button> 
+    </a>
+  
+  <ion-label position="floating" *ngIf="data">Nombre: {{u.nombre}}</ion-label>
+  <br>
+   
+  
+  
+ 
+
+  </li>
+  
+    </ion-content>
+  
+  
+  
+  
+  
+  
+  

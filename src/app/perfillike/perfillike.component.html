@@ -1,0 +1,24 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Productos
+    </ion-title>
+  </ion-toolbar>
+  <a href="/home/principal" > 
+    <ion-button type="submit" color="danger" expand="block">Principal</ion-button>
+    </a>  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+      <ion-label position="floating" *ngIf="data">Id:{{data.productos.nombre}}</ion-label>
+     <br>
+      <ion-label position="floating" *ngIf="data">Nombre:{{data.productos.apellido}}</ion-label>
+    <br>
+      <ion-label position="floating" *ngIf="data">Precio:{{data.productos.precio}}</ion-label>
+     <br>
+    
+</ion-content>
+
+

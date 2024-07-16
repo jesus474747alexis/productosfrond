@@ -1,0 +1,28 @@
+
+
+<p-toast></p-toast> 
+
+<ion-content>
+  
+  <form [formGroup]="loginForm" (ngSubmit)="onlogin(loginForm.value)">
+
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" required formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Precio</ion-label>
+      <ion-input type="text" required formControlName="precio"> </ion-input>
+    </ion-item>
+    
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Registrar</ion-button>
+      </ion-col>
+      
+    </ion-row>
+    
+  </form>
+
+ 
+</ion-content>
